@@ -185,9 +185,11 @@ class SeleniumDemoReg
   end
 
   def set_confirmation_password_field(password)
+    @chrome_driver.find_element(:id, 'confirm_password_password_2').send_keys(password)
   end
 
   def get_confirmation_password_value
+    @chrome_driver.find_element(:id, 'confirm_password_password_2')['value']
   end
 
   # registration confirmation - Difficulty Easy

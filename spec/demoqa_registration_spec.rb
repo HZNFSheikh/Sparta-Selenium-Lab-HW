@@ -64,8 +64,8 @@ describe 'testing the demoqa registration page' do
     end
 
     it 'should accept a password confirmation' do
-      # @driver.set_confirmation_password_field('Password')
-      # expect(@driver.get_confirmation_password_value).to match (@driver.get_password_value)
+      @driver.set_confirmation_password_field('Password')
+      expect(@driver.get_confirmation_password_value).to match (@driver.get_password_value)
     end
 
   end
